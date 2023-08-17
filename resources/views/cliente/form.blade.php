@@ -27,9 +27,18 @@
             {!! $errors->first('telefono', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
+            {{ Form::label('nombre_usuario') }}
+            {{ Form::text('nombre_usuario', $cliente->nombre_usuario, ['class' => 'form-control' . ($errors->has('nombre_usuario') ? ' is-invalid' : ''), 'placeholder' => 'Nombre Usuario']) }}
+            {!! $errors->first('nombre_usuario', '<div class="invalid-feedback">:message</div>') !!}
+        </div>
+        <div class="form-group">
             {{ Form::label('ingresos') }}
             {{ Form::text('ingresos', $cliente->ingresos, ['class' => 'form-control' . ($errors->has('ingresos') ? ' is-invalid' : ''), 'placeholder' => 'Ingresos']) }}
             {!! $errors->first('ingresos', '<div class="invalid-feedback">:message</div>') !!}
+        </div>
+        <div class="form-group">
+            <label for="password">Contraseña:</label>
+            <input type="password" name="password" required>
         </div>
 
     </div>

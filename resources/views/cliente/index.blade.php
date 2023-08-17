@@ -41,6 +41,7 @@
 										<th>Dui</th>
 										<th>Residencia</th>
 										<th>Telefono</th>
+										<th>Nombre Usuario</th>
 										<th>Ingresos</th>
 
                                         <th></th>
@@ -56,6 +57,7 @@
 											<td>{{ $cliente->dui }}</td>
 											<td>{{ $cliente->residencia }}</td>
 											<td>{{ $cliente->telefono }}</td>
+											<td>{{ $cliente->nombre_usuario }}</td>
 											<td>{{ $cliente->ingresos }}</td>
 
                                             <td>

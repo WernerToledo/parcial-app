@@ -12,14 +12,14 @@
             {!! $errors->first('id_clientes', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
-            {{ Form::label('id_empleados') }}
-            {{ Form::text('id_empleados', $venta->id_empleados, ['class' => 'form-control' . ($errors->has('id_empleados') ? ' is-invalid' : ''), 'placeholder' => 'Id Empleados']) }}
-            {!! $errors->first('id_empleados', '<div class="invalid-feedback">:message</div>') !!}
-        </div>
-        <div class="form-group">
             {{ Form::label('fecha_venta') }}
             {{ Form::text('fecha_venta', $venta->fecha_venta, ['class' => 'form-control' . ($errors->has('fecha_venta') ? ' is-invalid' : ''), 'placeholder' => 'Fecha Venta']) }}
             {!! $errors->first('fecha_venta', '<div class="invalid-feedback">:message</div>') !!}
+        </div>
+        <div class="form-group">
+            {{ Form::label('tipo_pago') }}
+            {{ Form::text('tipo_pago', $venta->tipo_pago, ['class' => 'form-control' . ($errors->has('tipo_pago') ? ' is-invalid' : ''), 'placeholder' => 'Tipo Pago']) }}
+            {!! $errors->first('tipo_pago', '<div class="invalid-feedback">:message</div>') !!}
         </div>
 
     </div>

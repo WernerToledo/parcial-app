@@ -29,12 +29,12 @@
                             {{ $venta->id_clientes }}
                         </div>
                         <div class="form-group">
-                            <strong>Id Empleados:</strong>
-                            {{ $venta->id_empleados }}
-                        </div>
-                        <div class="form-group">
                             <strong>Fecha Venta:</strong>
                             {{ $venta->fecha_venta }}
+                        </div>
+                        <div class="form-group">
+                            <strong>Tipo Pago:</strong>
+                            {{ $venta->tipo_pago }}
                         </div>
 
                     </div>

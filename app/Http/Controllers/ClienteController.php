@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Cliente;
+use App\Models\Cliente;
 use Illuminate\Http\Request;
 
 /**
@@ -44,7 +44,8 @@ class ClienteController extends Controller
     public function store(Request $request)
     {
         request()->validate(Cliente::$rules);
-
+        
+        $vardum($request->password);
         $cliente = Cliente::create($request->all());
 
         return redirect()->route('clientes.index')

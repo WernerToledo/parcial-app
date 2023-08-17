@@ -38,8 +38,8 @@
                                         
 										<th>Id Autos</th>
 										<th>Id Clientes</th>
-										<th>Id Empleados</th>
 										<th>Fecha Venta</th>
+										<th>Tipo Pago</th>
 
                                         <th></th>
                                     </tr>
@@ -51,8 +51,8 @@
                                             
 											<td>{{ $venta->id_autos }}</td>
 											<td>{{ $venta->id_clientes }}</td>
-											<td>{{ $venta->id_empleados }}</td>
 											<td>{{ $venta->fecha_venta }}</td>
+											<td>{{ $venta->tipo_pago }}</td>
 
                                             <td>
                                                 <form action="{{ route('ventas.destroy',$venta->id) }}" method="POST">

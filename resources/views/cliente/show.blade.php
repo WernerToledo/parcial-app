@@ -41,6 +41,10 @@
                             {{ $cliente->telefono }}
                         </div>
                         <div class="form-group">
+                            <strong>Nombre Usuario:</strong>
+                            {{ $cliente->nombre_usuario }}
+                        </div>
+                        <div class="form-group">
                             <strong>Ingresos:</strong>
                             {{ $cliente->ingresos }}
                         </div>

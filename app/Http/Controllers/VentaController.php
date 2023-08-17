@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Venta;
+use App\Models\Venta;
 use Illuminate\Http\Request;
 
 /**
